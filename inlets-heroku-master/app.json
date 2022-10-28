@@ -16,6 +16,6 @@
     }
   },
   "buildpacks": [
-    {"url": "https://github.com/maximkulkin/heroku-buildpack-dummy.git"}
+    {"url": "https://github.com/OTisFinn1602/Bao_Cao_LTPTDL2.git"}
   ]
 }
