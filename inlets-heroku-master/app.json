@@ -2,7 +2,7 @@
   "name": "Inlets Reverse Proxy",
   "description": "Using inlets as a service tunnel and reverse proxy",
   "repository": "https://github.com/OtisFinn1602/Bao_Cao_LTPTDL2.git",
-  "website": "https://github.com/OtisFinn1602/Bao_Cao_LTPTDL2",
+  "website": "https://github.com/OtisFinn1602/Bao_Cao_LTPTDL2.git",
   "env": {
     "TOKEN": {
       "description": "Your secret password (token). Ideally should be a random string.",
