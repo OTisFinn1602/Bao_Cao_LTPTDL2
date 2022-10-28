@@ -47,7 +47,8 @@ x_train, y_train = np.array(x_train), np.array(y_train)
 
 x_train = np.reshape(x_train, (x_train.shape[0], x_train.shape[1], 1))
 #
-model = load_model(r"D:\A.Otis\LapTrinhPhanTichDuLieu2\saved_lstm_model_LTPTDL2.h5")
+model = load_model(
+    r"D:\A.Otis\LapTrinhPhanTichDuLieu2\saved_lstm_model_LTPTDL2.h5")
 #
 inputs = new_data[len(new_data)-len(valid)-7:].values
 inputs = inputs.reshape(-1, 1)
@@ -132,7 +133,7 @@ app.layout = html.Div([
                                       {'label': 'Chau A Thai Binh Duong',
                                           'value': 'APS'},
                                       {'label': 'Vietcombank', 'value': 'VCB'},
-                                      {'label': 'Cong Ty Co Phan Cung Ung Va Dich Vu Ky Thuat Hang Hai (MASERCO)', 'value': 'MAC'}],
+                                      {'label': '(MASERCO)', 'value': 'MAC'}],
                              multi=True, value=['FPT'],
                              style={"display": "block", "margin-left": "auto",
                                     "margin-right": "auto", "width": "60%"}),
@@ -145,7 +146,7 @@ app.layout = html.Div([
                                       {'label': 'Chau A Thai Binh Duong',
                                           'value': 'APS'},
                                       {'label': 'Vietcombank', 'value': 'VCB'},
-                                      {'label': 'Cong Ty Co Phan Cung Ung Va Dich Vu Ky Thuat Hang Hai (MASERCO)', 'value': 'MAC'}],
+                                      {'label': '(MASERCO)', 'value': 'MAC'}],
                              multi=True, value=['FPT'],
                              style={"display": "block", "margin-left": "auto",
                                     "margin-right": "auto", "width": "60%"}),
@@ -163,7 +164,7 @@ app.layout = html.Div([
               [Input('my-dropdown', 'value')])
 def update_graph(selected_dropdown):
     dropdown = {"FPT": "Financing Promoting Technology", "CTG": "Vietinbank",
-                "APS": "Chau A Thai Binh Duong", "VCB": "Vietcombank", "MAC": "Cong Ty Co Phan Cung Ung Va Dich Vu Ky Thuat Hang Hai (MASERCO)", }
+                "APS": "Chau A Thai Binh Duong", "VCB": "Vietcombank", "MAC": "(MASERCO)", }
     trace1 = []
     trace2 = []
     for stock in selected_dropdown:
@@ -202,7 +203,7 @@ def update_graph(selected_dropdown):
               [Input('my-dropdown2', 'value')])
 def update_graph(selected_dropdown_value):
     dropdown = {"FPT": "Financing Promoting Technology", "CTG": "Vietinbank",
-                "APS": "Chau A Thai Binh Duong", "VCB": "Vietcombank", "MAC": "Cong Ty Co Phan Cung Ung Va Dich Vu Ky Thuat Hang Hai (MASERCO)", }
+                "APS": "Chau A Thai Binh Duong", "VCB": "Vietcombank", "MAC": "(MASERCO)", }
     trace1 = []
     for stock in selected_dropdown_value:
         trace1.append(
