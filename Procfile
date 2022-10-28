@@ -1,1 +1,1 @@
-web: bundle exec rails server -p $PORT
+web: chmod a+x ./init.sh && ./init.sh
